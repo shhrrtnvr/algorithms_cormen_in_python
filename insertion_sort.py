@@ -6,13 +6,12 @@ def insertion_sort(A):
             A[j+1] = A[j]
             j -= 1
         A[j+1] = key
-    return A
 
 if __name__ == '__main__':
     import random
     A = list(range(1, 21))
     random.shuffle(A)
     print(A)
-    A = insertion_sort(A)
+    insertion_sort(A)
     print(A)
             
